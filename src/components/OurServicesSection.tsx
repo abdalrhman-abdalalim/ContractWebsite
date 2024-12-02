@@ -4,6 +4,7 @@ import qualityServices3 from "../../assets/workers.png";
 import qualityServices4 from "../../assets/people.png";
 import qualityServices5 from "../../assets/engineer.png";
 import qualityServices6 from "../../assets/crane.png";
+import square from '../../assets/square.png'
 
 
 const OurServicesSection = () => {
@@ -23,7 +24,7 @@ const OurServicesSection = () => {
         <div className="flex items-center justify-around w-48 mx-auto lg:w-64">
           <hr className="border border-[#FFC048] w-20 lg:w-32" />
           <img
-            src="/assets/square.png"
+            src={square}
             alt="square image"
             className="w-5 rotate-45 lg:w-8"
           />

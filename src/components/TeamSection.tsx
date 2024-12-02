@@ -1,4 +1,5 @@
 import teamProfile from "../../assets/acbf24eebb168dbc694b5eb6dd5c46bf-construction-engineer-project-drawings.webp"
+import square from "../../assets/square.png"
 const TeamSection = () => {
   const RenderMembers = () => {
     return [
@@ -36,7 +37,7 @@ const TeamSection = () => {
         <div className="flex items-center justify-around w-48 mx-auto lg:w-64">
           <hr className="border border-[#FFC048] w-20 lg:w-32" />
           <img
-            src="assets/square.png"
+            src={square}
             alt=" square image"
             className="w-5 rotate-45 lg:w-8"
           />

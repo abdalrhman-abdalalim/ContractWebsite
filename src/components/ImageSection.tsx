@@ -1,7 +1,14 @@
 import { ChevronRight } from "lucide-react";
 import backGroundUrl from "../../assets/billy-freeman-J8Lr5bLerQ8-unsplash.jpg";
 
+
 const ImageSection = () => {
+  const onClickServices = () => {
+    window.scrollTo({ top: 1400, behavior: "smooth" });
+  }
+  const onClickContact = () => {
+    window.scrollTo({ top: 2300, behavior: "smooth" });
+  }
   return (
     <section
       style={{
@@ -24,11 +31,15 @@ const ImageSection = () => {
             recusandae placeat amet ipsum quis at.
           </p>
           <div className="flex items-center justify-around w-72 mt-2 mx-auto">
-            <button className="bg-transparent p-3 rounded-3xl border flex items-center text-white hover:scale-110 transition-all duration-200 ease-in-out max-sm:p-2 max-sm:text-sm">
+            <button
+              className="bg-transparent p-3 rounded-3xl border flex items-center text-white hover:scale-110 transition-all duration-200 ease-in-out max-sm:p-2 max-sm:text-sm"
+              onClick={onClickContact}
+            >
               <ChevronRight size={20} />
               Contact Us
             </button>
-            <button className="bg-[#C0A001] p-3 rounded-3xl flex items-center hover:scale-110 transition-all duration-200 ease-in-out max-sm:p-2 max-sm:text-sm">
+            <button className="bg-[#C0A001] p-3 rounded-3xl flex items-center hover:scale-110 transition-all duration-200 ease-in-out max-sm:p-2 max-sm:text-sm"
+            onClick={onClickServices}>
               <ChevronRight size={20} />
               Our Services
             </button>

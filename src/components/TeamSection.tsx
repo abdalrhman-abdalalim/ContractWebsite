@@ -1,16 +1,17 @@
+import teamProfile from "../../assets/acbf24eebb168dbc694b5eb6dd5c46bf-construction-engineer-project-drawings.webp"
 const TeamSection = () => {
   const RenderMembers = () => {
     return [
       {
-        src: "assets\\acbf24eebb168dbc694b5eb6dd5c46bf-construction-engineer-project-drawings.webp",
+        src:teamProfile,
         title: "علي",
       },
       {
-        src: "assets\\acbf24eebb168dbc694b5eb6dd5c46bf-construction-engineer-project-drawings.webp",
+        src: teamProfile,
         title: "محمد",
       },
       {
-        src: "assets\\acbf24eebb168dbc694b5eb6dd5c46bf-construction-engineer-project-drawings.webp",
+        src:teamProfile ,
         title: "أحمد",
       },
     ].map((per, index) => (

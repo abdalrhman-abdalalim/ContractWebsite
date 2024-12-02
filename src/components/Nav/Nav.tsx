@@ -6,6 +6,7 @@ import { BriefcaseBusiness } from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import imgLogo from "../../../assets/cropped_image_processed_processed.png";
 import "./navStyle.css";
 
 const Nav = () => {
@@ -51,7 +52,8 @@ const Nav = () => {
     <nav className="text-black border-gray-200 dark:bg-[#FAFAFA] ">
       {/* Header Section */}
       <div className="text-black text-center p-3 h-32 flex items-center justify-center max-md:h-24 max-sm:h-20 max-xs1:h-[64px] border-b-4 border-b-[#C0A001]">
-        <img src="assets\cropped_image_processed_processed.png"
+        <img
+          src={imgLogo}
           className="w-44 max-xl1:w-32 max-md:w-28 max-sm:w-[90px] max-xs1:absolute max-xs1:right-0"
           alt="logo"
         />

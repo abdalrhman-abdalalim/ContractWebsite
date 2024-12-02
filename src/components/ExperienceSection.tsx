@@ -1,3 +1,7 @@
+import experienceImg1 from "../../assets/pexels-sevenstormphotography-443383.jpg"
+import experienceImg2 from "../../assets/pexels-rezwan-1216589.jpg";
+
+
 const ExperienceSection = () => {
   return (
     <section className="container max-w-[950px] p-5 h-fit mx-auto lg:max-w-[1200px] lg:p-10">
@@ -5,12 +9,12 @@ const ExperienceSection = () => {
         {/* Images Div */}
         <div className="relative flex flex-col items-center mr-7 max-md:order-0 lg:mr-10">
           <img
-            src="assets/pexels-sevenstormphotography-443383.jpg"
+            src={experienceImg1}
             alt="experience image"
             className="w-80 max-md:w-52 lg:w-[400px]"
           />
           <img
-            src="assets/pexels-rezwan-1216589.jpg"
+            src={experienceImg2}
             alt="experience image"
             className="w-72 border-white border-8 relative -mt-36 max-md:w-48 -mr-20 max-md:-mt-[95px] max-sm:-mt-20 lg:w-[350px] lg:-mt-48 lg:-mr-24"
           />

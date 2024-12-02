@@ -1,10 +1,13 @@
+import  serviceImg1  from "../../assets/conveyor.png"
+import  serviceImg2  from "../../assets/workers.png";
+import  serviceImg3  from "../../assets/processing.png";
 
 const ServicesImages = () => {
    return (
      <section className="flex justify-center">
        <div className="w-72 bg-white h-48 mt-[-100px] p-8 max-md:w-44 max-sm:w-28 max-xs2:w-24 border border-gray-100">
          <img
-           src="assets\conveyor.png"
+           src={serviceImg1}
            alt="experienced team"
            className="w-14 mx-auto"
          />
@@ -19,7 +22,7 @@ const ServicesImages = () => {
        </div>
        <div className="w-72 bg-white h-[222px] mt-[-130px] p-8 pt-[62px] max-md:w-44 max-sm:w-28 max-xs2:w-24 border border-gray-100">
          <img
-           src="assets\workers.png"
+           src={serviceImg2}
            alt="experienced team"
            className="w-14 mx-auto"
          />
@@ -34,7 +37,7 @@ const ServicesImages = () => {
        </div>
        <div className="w-72 bg-white h-48 mt-[-100px] p-8 max-md:w-44 max-sm:w-28 max-xs2:w-24 border border-gray-100 mb-5">
          <img
-           src="assets\processing.png"
+           src={serviceImg3}
            alt="experienced team"
            className="w-14 mx-auto"
          />

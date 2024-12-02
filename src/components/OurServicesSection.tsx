@@ -1,4 +1,21 @@
+import qualityServices1 from "../../assets/drilling.png";
+import qualityServices2 from "../../assets/delivery.png";
+import qualityServices3 from "../../assets/workers.png";
+import qualityServices4 from "../../assets/people.png";
+import qualityServices5 from "../../assets/engineer.png";
+import qualityServices6 from "../../assets/crane.png";
+
+
 const OurServicesSection = () => {
+  const services = [
+    { src: qualityServices1, title: "التعدين الأرضي" },
+    { src: qualityServices2, title: "توريد المواد" },
+    { src: qualityServices3, title: "طاقم المبنى" },
+    { src: qualityServices4, title: "استشارات" },
+    { src: qualityServices5, title: "بنيان" },
+    { src: qualityServices6, title: "خدمة الرافعة" },
+  ];
+
   return (
     <section className="mt-10 lg:mt-16">
       <div className="text-center">
@@ -6,29 +23,21 @@ const OurServicesSection = () => {
         <div className="flex items-center justify-around w-48 mx-auto lg:w-64">
           <hr className="border border-[#FFC048] w-20 lg:w-32" />
           <img
-            src="assets/square.png"
-            alt=" square image"
+            src="/assets/square.png"
+            alt="square image"
             className="w-5 rotate-45 lg:w-8"
           />
           <hr className="border border-[#FFC048] w-20 lg:w-32" />
         </div>
       </div>
       <div className="grid grid-cols-3 gap-4 max-md:grid-cols-3 max-sm:grid-cols-1 lg:gap-8">
-        {/* Service Card */}
-        {[
-          { src: "assets/drilling.png", title: "التعدين الأرضي" },
-          { src: "assets/delivery.png", title: "توريد المواد" },
-          { src: "assets/workers.png", title: "طاقم المبنى" },
-          { src: "assets/people.png", title: "استشارات" },
-          { src: "assets/engineer.png", title: "بنيان" },
-          { src: "assets/crane.png", title: "خدمة الرافعة" },
-        ].map((service, index) => (
+        {services.map((service, index) => (
           <div
             key={index}
             className="bg-white h-fit p-5 lg:p-8 shadow-md rounded-lg"
           >
             <img
-              src={service.src}
+              src={service.src} // Pass the string directly
               alt={service.title}
               className="w-10 mx-auto lg:w-16"
             />
@@ -46,3 +55,4 @@ const OurServicesSection = () => {
 };
 
 export default OurServicesSection;
+
